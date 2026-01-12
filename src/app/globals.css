@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-accent: #ED7D4B;
+  --color-neutral: #D8D4D0;
+  --color-dark: #443F3C;
+  --color-peach: #FBE8D6;
+  --color-white: #FFFFFF;
+
+  /* Typography matches - keeping utility names standard but mapping values */
+  --font-outfit: var(--font-outfit), sans-serif;
+
+  /* Spacing */
+  --spacing-padding: 24px;
+  --radius-card: 28px;
+
+  /* Shadows for depth */
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-pop: 0 20px 40px -5px rgba(237, 125, 75, 0.3);
+}
+
+:root {
+  --background: var(--color-white);
+  --foreground: var(--color-dark);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit);
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 24px;
+  /* Body: 16/24 */
+}
+
+h1,
+.h1 {
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  /* SemiBold */
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.micro {
+  font-family: var(--font-outfit);
+  font-weight: 500;
+  /* Medium */
+  font-size: 12px;
+  line-height: 16px;
+}
