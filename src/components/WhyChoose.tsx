@@ -1,5 +1,5 @@
 'use client';
-import { ShieldCheck, BadgeCheck, Clock, Wallet } from 'lucide-react';
+import { ShieldCheck, BadgeCheck, Clock, Wallet, UserCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const reasons = [
@@ -22,6 +22,11 @@ const reasons = [
         icon: <Wallet size={28} />,
         title: "Affordable Pricing",
         desc: "Transparent pricing with no hidden charges."
+    },
+    {
+        icon: <UserCheck size={28} />,
+        title: "Experienced Drivers",
+        desc: "10+ years of experienced drivers ensuring a smooth ride."
     }
 ];
 

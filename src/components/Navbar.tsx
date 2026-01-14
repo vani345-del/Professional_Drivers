@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Car, Menu, X } from "lucide-react";
+import { Car, Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
     { label: "How It Works", href: "#how-it-works" },
@@ -45,7 +45,12 @@ const Navbar = () => {
                     </div>
 
                     {/* CTA Button */}
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex items-center gap-6">
+                        <a href="tel:+911234567890" className="flex items-center gap-2 text-dark font-medium hover:text-accent transition-colors">
+                            <Phone className="w-5 h-5 text-accent" />
+                            <span>+91 12345 67890</span>
+                        </a>
+
                         <motion.a
                             href="https://play.google.com/store"
                             target="_blank"
@@ -88,6 +93,13 @@ const Navbar = () => {
                                         {link.label}
                                     </a>
                                 ))}
+                                <a
+                                    href="tel:+911234567890"
+                                    className="flex items-center gap-2 text-dark font-medium hover:text-accent transition-colors px-2 py-2"
+                                >
+                                    <Phone className="w-5 h-5 text-accent" />
+                                    <span>+91 12345 67890</span>
+                                </a>
                                 <a
                                     href="https://play.google.com/store"
                                     target="_blank"
